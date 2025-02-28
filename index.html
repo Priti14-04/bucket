@@ -5,25 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container{
-            width:300px;
-            height: 300px;
-            background-color:white;
-            display: block;
-            margin: 0 auto;
-            border-radius: 15px;
-            border: 1px solid black;
+        body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin: 0;
+    
+}
 
-        }
-        .bucket1{
-            height: 200px;
-            display: block;
-            margin: auto;
-        }
-        .btn-container{
-            display: flex;
-            justify-content: center;
-        }
+    .container {
+    width: 320px;
+    height: 300px;
+    margin-top: 90px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bucket {
+    width:200px;
+    height: 200px;
+    
+}
+
+.btn-container {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-fullBucket {
+    background-color: #4caf50;
+    color: white;
+}
+
+.btn-fullBucket:hover {
+    background-color: #45a049;
+}
+
+.btn-emptyBucket {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-emptyBucket:hover {
+    background-color: #d32f2f;
+}
     </style>
 </head>
 <body>
@@ -40,7 +82,7 @@
         bucketElement.src='bucket.png';
     }
     function emptyBucket(){
-        bucketElement.src='bucket(1).png';
+        bucketElement.src='bucket_empty.png';
     }
 </script>
 </body>
