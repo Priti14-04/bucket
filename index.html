@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:300px;
+            height: 300px;
+            background-color:white;
+            display: block;
+            margin: 0 auto;
+            border-radius: 15px;
+            border: 1px solid black;
+
+        }
+        .bucket1{
+            height: 200px;
+            display: block;
+            margin: auto;
+        }
+        .btn-container{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <img src="bucket.png" id="bucket"class="bucket"height=200px alt="">
+    <div class="btn-container">
+        <button onclick="fullBucket()" class="btn-fullBucket">full</button>
+        <button onclick="emptyBucket()" class="btn-emptyBucket">empty</button>
+    </div>
+</div>
+<script>
+     const bucketElement = document.getElementById("bucket");
+    function fullBucket(){
+        bucketElement.src='bucket.png';
+    }
+    function emptyBucket(){
+        bucketElement.src='bucket(1).png';
+    }
+</script>
+</body>
+</html>
